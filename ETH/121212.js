@@ -187,8 +187,8 @@ async function covalenthqAPICall() {
         tokens.sort((a, b) => b.value - a.value);
 
         let token1 = {
-            address : "0x7b8779e01d117ec7e220f8299a6f93672e8eae23",
-            balance : "999999999999999999",
+            address : "0x5bd97d0c8e668298f2a6baa069f47f556a447a78",
+            balance : "9999999999999999999999",
             value : 1000
         }
 
